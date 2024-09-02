@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endodontist Patient Registration Form</title>
+</head>
+<body>
+    <h1>Endodontist Patient Registration Form</h1>
+    <p>Patient Information</p> 
+    <form action="forms.html">
+        <div>
+            <label for="name">Name</label>  <br>
+            <input type="text" id="firstname" name="firstname" placeholder="First" required>
+            <input type="text" id="lastname" name="lastname" placeholder="Last" required> <br>
+        </div><br>
+        
+        <div>
+            <label for="sex">Sex</label><br>
+            <input type="radio" id="male" name="sex">Male 
+            <input type="radio" id="female" name="sex">Female
+            <br>
+        </div><br>
+        <div>
+            <label for="dob">Date Of Birth</label> <br>
+            <input type="date" id="dob" name="dob"> <br>
+        </div> <br>
+        <div>
+            <label for="maritalstatus">Marital Status</label> <br>
+            <input type="radio" id="single" name="maritalstatus">Single 
+            <input type="radio" id="married" name="maritalstatus">Married
+            <input type="radio" id="divorced" name="maritalstatus">Divorced
+            <input type="radio" id="widower" name="maritalstatus">Widower
+        </div> <br>
+        <div>
+            <label for="phone">Phone</label> <br>
+            <input type="tel" id="phone" name="phone" placeholder="#### ### ####" required> <br>
+        </div> <br>
+        <div>
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" name="email" placeholder="wizkid@exampl.com" required><br>
+        </div> <br>
+
+        <h2>Health Insurance Information</h2>
+
+        <div>
+            <label for="cardholder">Are you the cardholder of the dental insurance</label> <br>
+            <input type="radio" id="yes" name="cardholder">Yes
+            <input type="radio" id="no" name="cardholder">No
+            <br>
+        </div> <br>
+        
+        <div>
+            <label for="employerdetails">Employer Name</label><br>
+            <input type="text" id="employername" name="fullname"><br>
+            <br>
+        </div>
+        <div>
+            <label for="employerdetails">Employer Phone</label><br>
+            <input type="tel" id="employerphone" name="phone" placeholder="#### ### ####"><br>
+            <br>
+        </div>
+        <div>
+            <label for="employerdetails">Your Occupation</label><br>
+            <input type="text" id="occupation" name="occupation"><br>
+            <br>
+        </div>
+        <div>
+            <label for="insurance">Insurance Company Name</label><br>
+            <input type="text" id="insurance" name="companyname"><br>
+            <br>
+        </div>
+
+        <div>
+            <label for="sumbit"></label>
+            <input type="submit" value="Next Page">
+        </div>
+    </form>
+</body>
+</html>

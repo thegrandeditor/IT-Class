@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.dim{
+    height: 200px;
+    color: red;
+    padding: 10px;
+    margin: 30px;
+}
+
+.element{
+    border: 2px groove blue;
+    cursor: cell;
+}

@@ -1,0 +1,101 @@
+ /* Universal Selector */
+
+ *{
+    background-color: rgb(242, 176, 94);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: blue;
+ }
+
+ h1{
+    color: red;
+ }
+
+ h3{
+    color: green;
+ }
+
+ p{
+    background-color: black;
+ }
+
+ /* ID selector:
+ selects a single element with a specific ID attribute */
+
+ #sons{
+    color: rgb(106, 82, 54);
+ }
+
+ /* class selector 
+ selects all elements with a specific class attribute*/
+
+  .sons{
+    color: rgb(175, 6, 158);
+ }
+
+ /* Attribute Selector:
+ selects all elements based on the presence or value of their attributes */
+
+[type]{
+    border: 1px solid #ccc;
+    background-color: rgba(137, 198, 63, 0.399);
+}
+
+[type="email"]{
+     border: 1px solid #ccc;
+    background-color: rgb(35, 247, 2);
+    color: #a90f0f;
+}
+
+/* Psuedo-classes: */
+:hover{
+    color: aqua;
+}
+
+p:hover{
+    color: red;
+}
+
+#sons:hover{
+    color: rgb(207, 246, 13);
+}
+
+
+:active{
+    background-color: chocolate;
+}
+
+:is(h1, h2, h3){
+    color: rgb(204, 3, 3);
+}
+
+/* Psuedo-elements */
+::first-letter{
+    color: aliceblue;
+}
+
+::placeholder{
+    color: #a90f0f;
+    font-style: italic;
+}
+
+.quote::after{
+    content: "\201d";
+}
+
+.quote::before{
+    content: "\201c";
+}
+
+p::first-letter{
+    font-size: 200%;
+    font-weight: bold;
+    color: rgb(15, 227, 227);
+}
+
+::selection{
+    background-color: greenyellow;
+    color: white;
+}
+

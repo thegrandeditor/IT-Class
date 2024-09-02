@@ -1,0 +1,85 @@
+/* 
+.navbar {
+  overflow: hidden;
+  background-color: rgb(252, 207, 6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #070505;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar img{
+  width: 20%;
+  height: 50px;
+}
+.navbar a:hover {
+  background: #080606;
+  color: rgb(254, 250, 250);
+} */
+
+.dim{
+  background-attachment: fixed;
+  background-image: url(oldpeople.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.element{
+  background-attachment: scroll;
+  background-image: url(cheese.jpg);
+  /* margin-top: 50px; */
+  background-size: cover;
+  background-attachment: fixed;
+}
+.element2{
+  background-attachment: fixed;
+  background-image: url(carry.jpg);
+  margin-top: 50px;
+  background-size: cover;
+  background-position: center;
+}
+
+.element3{
+  background-attachment: fixed;
+  background-image: url(women.jpg);
+  margin-top: 50px;
+  background-size: cover;
+}
+
+.element4{
+  background-attachment: fixed;
+  background-image: url(execeriseold.jpg);
+}
+
+.element5{
+  background-attachment: fixed;
+  background-image: url(carry.jpg);
+  margin-top: 50px;
+  background-size: cover;
+  background-position: center;
+}
+
+.element6{
+  background-attachment: fixed;
+  background-image: url(women.jpg);
+  margin-top: 50px;
+  background-size: cover;
+}
+
+aside{
+  background-attachment: fixed;
+  background-image: url(/execeriseold.jpg);
+  margin-top: 50px;
+  background-size: cover;
+}

@@ -1,0 +1,50 @@
+.container{
+     background-color: black;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* height: 500px; */
+    /* gap: 20px; */
+    flex-wrap: wrap;
+
+
+    /* justification */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around;
+    justify-content: end;
+    justify-content: start;
+    justify-content: right; */
+
+
+    /* Alignment */
+    /* align-items: start;
+    align-items: end; */
+    align-items: center;
+
+
+}
+
+
+.items{
+    flex-basis: 100px;
+    height: 100px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.item1{
+    background-color: blue; color: aliceblue;
+}
+.item2{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.item3{
+    background-color: red; 
+}
+.grandchild{
+    background-color: bisque;
+    margin: 6px;
+}

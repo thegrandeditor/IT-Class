@@ -1,0 +1,40 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: bisque;
+ }
+
+
+ h1, h2, h3{
+    font-size: xx-large;
+    color: blueviolet;
+ }
+
+ #sons{
+    color: brown;
+    font-size: x-large;
+    text-align: right;
+ }
+    ::placeholder{
+        color: darkred;
+        font-size: large;
+    }
+
+
+    /* compound selectors */
+    .sons.son1 {
+        font-size: xx-large;
+        color: cornflowerblue;
+    }
+
+    .sons.son2.bro {
+        font-size: x-large;
+        color: crimson;
+    }
+
+    .son1.son2.bro{
+        font-size: large;
+        color: darkcyan;
+        text-align: right;
+    }

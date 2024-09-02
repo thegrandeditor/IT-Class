@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+
+    <style>
+        .box1, .box2, .box3{
+            float:right;
+        }
+        .float-box{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+        .box1{
+            background-color: cadetblue ;
+        }
+        .box2{
+            background-color: darkmagenta;
+        }
+        .box3{
+            background-color: lawngreen;
+        }
+        .others{
+            background-color: darkolivegreen;
+        }
+        .clearfix::after{
+            content: vvv;
+            display: block;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="container clearfix"> -->
+            <div class="float-box box1">box1</div>
+            <div class="float-box box2">box2</div>
+            <div class="float-box box3">box3</div>
+            <p style="clear:both"></p>
+    </div>
+
+            <!-- <div class="float-box box1">box1</div>
+            <div class="float-box box2">box2</div>
+            <div class="float-box box3">box3</div>
+            <p style="clear:both"></p> -->
+
+    <div class="others">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Dicta, aperiam. Soluta, cupiditate perferendis. Ut quasi commodi, 
+        illum atque explicabo excepturi porro enim,
+         cumque dolorum quas iusto libero tempora magni facere!
+    </div>
+</body>
+</html>

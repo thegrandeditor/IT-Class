@@ -1,0 +1,26 @@
+.box1{
+    background-color: blue;
+    display: static;
+    position: fixed;
+
+}
+
+.static-box2{
+    background-color: red;
+}
+
+.static-box2{
+    background-color: red;
+}
+
+.static-box2{
+    background-color: red;
+}
+
+.parent{
+    background-color: aqua;
+}
+
+.Gparent{
+    background-color: black;
+}

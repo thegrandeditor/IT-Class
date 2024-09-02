@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol{
+    padding: 25px;
+    list-style-type: georgian;
+}
+
+ul{
+    padding: 25px;
+    list-style-type: lower-alpha;
+    list-style-type: disc;
+    list-style-type: circle;
+    list-style-type: square;
+    list-style-type: upper-latin;
+    list-style-type: lower-roman; 
+
+    list-style-position: inside;
+    list-style: armenian; background-color: bisque;
+    /* list-style-image: url(/HTML/file/escalade\ 6.jpeg);  */
+}
+
+ul>:nth-child(even){
+    background-color: cornflowerblue;
+}
+
+ul>:nth-child(odd){
+    background-color: darkorange;
+}
+
+ul>:hover{
+    background-color: aliceblue;
+    color: navy;
+}
+
+/* ####################################################################################### */
+/* TABLES */
+/* ###################################################################### */
+
+table{
+    width: 100%;
+    background-color: violet;
+    color: aliceblue;
+    border: 3px solid navy;
+}
+table,td,th{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 3px solid navy;
+    padding: 2px;
+    text-align: center;
+}
+
+td{
+    height: 40px;vertical-align:middle;
+}
+
+/* ####################################################################################### */
+/* TABLES WITH DIVS */
+/* ###################################################################### */
+
+    .table-container{
+        display: table;
+        width: 100%;
+        background-color: aqua;
+}
+
+.table-row{
+    display: table-row;
+    background-color: blue;
+    color: antiquewhite;
+}
+
+.table-cell{
+    display: table-cell;
+    border: 2px solid gold;
+    padding: 10px;
+}
+
+
+/* .table-cell:nth-child(odd){
+    background-color: chocolate;
+}
+.table-cell:nth-child(even){
+    background-color: mediumpurple;
+} */
+.table-cell:hover{
+    background-color: burlywood;
+    color: black;
+}
+
+.table-row:hover{
+    background-color: brown;
+}

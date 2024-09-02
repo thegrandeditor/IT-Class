@@ -1,0 +1,39 @@
+/* descendant combinator */
+/* .father h1 {
+    background-color: #b4e501ea;
+}
+ .father div div h2{
+    background-color: #cf07eeea;
+ }
+
+.father div div h1, h2{
+    background-color: #db5203ea;
+}
+
+.father div h2{
+    background-color: #08c0f8ea;
+}
+
+/* child combinator */
+/* 
+.father > h1 {
+    background-color: #0177e5ea;
+}
+.father > div > h2 {
+    color: #ae21ffea;
+} */ 
+
+/* adjacent sibling combinator */
+.father+* {
+    background-color: #dc0707ea;
+    display: none;
+}
+
+/* general sibling combinator */
+.father p~* {
+    background-color: #f8f808ea;
+    display:;
+} 
+.father~*{
+    background-color: hsla(9, 94%, 50%, 0.918);
+}

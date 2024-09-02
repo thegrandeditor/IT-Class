@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Form</title>
+</head>
+<body>
+    <form onsubmit="myjsfunctiomnOnsubmit()" action="/process.php" method="get">
+        <div>
+            <label> Class (readonly)</label> <br>
+            <input type="text" id="fullnamereadonly" name="fullname" value="WEB DEVELOPMENT" readonly> <br>
+        </div>
+        <div>
+            <label for="fullnamehidden">class code (hidden from field)</label><br>
+            <input type="hidden" id="fullnamehidden" name="fullname" value="WEB1" readonly>
+            <br>
+        </div><br>
+        <div>
+            <label for="fullname">your fullname</label> <br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter Name" required> <br>
+        </div> <br>
+        <div>
+            <label for="email">enter your email</label> <br>
+            <input type="email" id="email" name="email" required> <br>
+        </div><br>
+        <div>
+            <label for="password">enter your password</label> <br>
+            <input type="password" id="password" name="password" required> <br>
+        </div> <br>
+        <div>
+            <label for="number">enter your number</label> <br>
+            <input type="number" id="number" name="number"> <br>
+        </div> <br>
+        <div>
+            <label for="phone">enter your phone/tel</label> <br>
+            <input type="tel" id="tel" name="phone"> <br>
+        </div> <br>
+        <div>
+            <label for="search">search something</label> <br>
+            <input type="search" id="search" name="search"> <br>
+        </div><br>
+        <div>
+            <label for="date">enter date</label><br>
+            <input type="date" id="date" name="date"> <br>
+        </div><br>
+        <div>
+            <label for="time">enter time</label> <br>
+            <input type="time" id="time" name="time"><br>
+        </div><br>
+        <div>
+            <label for="datetime">enter your datetime</label> <br>
+            <input type="datetime" id="datetime" name="datetime"><br>
+        </div><br>
+        <div>
+            <label for="color">select color</label> <br>
+            <input type="color" id="color" name="color"><br>
+        </div><br>
+        <div>
+            <label for="url">enter url</label><br>
+            <input type="url" id="url" name="url"><br>
+        </div><br>
+        <div>
+            <label for="sex">sex (radio type)</label><br>
+            <input type="radio" id="male" name="sex" value="male"> <label for="male">male</label><br>
+            <input type="radio" id="female" name="sex" value="female"> <label for="female">female</label><br>
+            <input type="radio" id="others" name="sex" value="others"> <label for="others">others</label><br>
+        </div><br>
+        <div>
+            <label for="maritalstatus">marital status(check box type)</label><br>
+            <input type="checkbox" id="single" name="maritalstatus" value="single"> <label for="single">single</label><br>
+            <input type="checkbox" id="married" name="maritalstatus" value="married"> <label for="married">married</label><br>
+        </div><br>
+        <div>
+            <label for="educational level">educational level</label><br>
+            <input type="checkbox" id="level" name="education[]" value="nursery"> <label for="nursery">nursery</label><br>
+            <input type="checkbox" id="level" name="education[]" value="secondary"> <label for="secondary">secondary</label><br>
+           <input type="checkbox" id="level" name="education[]" value="masters"> <label for="masters">masters</label><br>
+           <input type="checkbox" id="level" name="education[]" value="phd"> <label for="phd">phd</label><br>
+        </div><br>
+
+        <div>
+            <label for="experince">experince</label><br>
+            <input type="range" id="experince" name="experince" min="0"  max="10" value="0" oninput="this.nextElementSibling.value=this.value">
+            <output>0</output><br>
+        </div><br>
+        <div>
+        <label for="experince">select one</label><br>
+        <select id="experince" name="experince">
+        <option value="0" selected> no experince</option> 
+        <option value="1">1 year</option>
+        <option value="2">2 years</option>
+        <option value="3">3 years</option>
+        </select>
+        </div><br>
+        <div>
+            <label for="fruits"> select multiple</label><br>
+            <select id="fruits" name="fruits[]" multiple>
+            <option value="apple">apple</option>
+            <option value="banana">banana</option>
+            <option value="orange">orange</option>
+            <option value="grape">grape</option>
+            <option value="strawberry">strawberry</option>
+            </select>
+        </div><br>
+
+        <div>
+            <label for="browser"> choose your browser</label><br>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="safari">
+                <option value="edge">
+                <option value="chrome">
+                <option value="firefox">
+            </datalist>
+        </div><br>
+
+        <div>
+            <label for="text"> submit your message</label><br>
+            <textarea id="textarea" name="w3review" rows="4"
+            cols="24"></textarea><br>
+        </div><br>
+
+        <div>
+            <label for="file">single file</label><br>
+            <input type="file" id="fullname" name="fullname" 
+            accept="images/png, images/jpeg, images/jpg, audio/mp3, .doc,
+            .docx, .xml"><br>
+        </div><br>
+
+        <div><label for="file">single select accept options not recommeded</label><br>
+            <input type="file" name="file" id="file" accept="video/*, audio/**"><br>
+        </div<br>>
+
+        <div>
+            <label>select multiple file</label><br>
+            <input type="file" id="fullname" name="fullname[]"
+            accept="images/png, images/jpeg, images/jpg, audio/mp3, .doc,
+            .docx, .xml"  multiple><br>
+        </div><br>
+
+        <div>
+            <label>sumbit image</label><br>
+            <input type="image" width="100px" height="50px" src="/file/escalade 6 full.jpg" alt="submit">
+            <br>
+        </div><br>
+
+        <div>
+            <label>(submit) buttons</label><br>
+            <input type="submit" >
+            <button onclick="myjsfunctiomnOnclick()" 
+        type="submit">sign up</button>
+        <button type="reset">reset</button>
+        </div>
+    </form>
+</body>
+</html>
